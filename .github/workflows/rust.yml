@@ -16,8 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Install packages
-      run: sudo apt install libunistring-dev libgtk-3-dev libaom-dev libdav1d-dev librust-atk-dev
+    - name: Install some packages
+      run: sudo apt install libunistring-dev libgtk-3-dev libaom-dev libdav1d-dev librust-atk-dev libasound2-dev
     - name: Build
       run: cargo build
     - name: Upload a Build Artifact
