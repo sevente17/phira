@@ -17,5 +17,5 @@ strip = true
 opt-level = 2
 
 [build]
-rustflags = ["-L", "/usr/local/lib"]
+rustflags = ["-L", "/usr/lib"]
 
