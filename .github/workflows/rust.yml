@@ -19,7 +19,7 @@ jobs:
     - name: Install some packages
       run: sudo apt install libunistring-dev libgtk-3-dev libaom-dev libdav1d-dev librust-atk-dev ffmpeg libasound2-dev
     - name: Build
-      run: cargo -L libavformat build
+      run: cargo:rustc-link-searc build
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.3.0
       with:
